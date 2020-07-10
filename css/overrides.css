@@ -179,6 +179,10 @@ a.highlight:hover {
   margin: 0px !important;
 }
 
+.is-nav {
+  margin-bottom: 32px !important;
+}
+
 article {
   position: relative;
   display: flex;
@@ -219,4 +223,8 @@ article {
   height: 56px;
   width: 100%;
   background-color: black;
+}
+
+#quote {
+  max-width: 456px;
 }
