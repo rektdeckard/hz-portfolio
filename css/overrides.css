@@ -1,0 +1,222 @@
+/* ADDED CLASSES */
+@font-face {
+  font-family: 'CooperBTLight';
+  src:  url('/fonts/CooperBTLight.woff2') format('woff2'),
+        url('/fonts/CooperBTLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src:  url('/fonts/MaisonNeueWEB-Mono.woff2') format('woff2'),
+        url('/fonts/MaisonNeueWEB-Mono.woff') format('woff');
+}
+
+html {
+  font-size: 13px;
+  letter-spacing: -0.2px;
+  line-height: 18px;
+}
+
+body {
+  color: black;
+}
+
+header {
+  margin-bottom: 32px;
+  /* border:1px transparent solid; */
+}
+
+section {
+  padding-bottom: 0px !important;
+  /* background-color: white; */
+}
+
+canvas {
+  margin-top: -10px;
+}
+
+footer {
+  font-size: 11px;
+}
+
+.is-display {
+  font-family: "CooperBTLight", "Cambria", serif !important;
+  line-height: 1.5;
+}
+
+.is-mono {
+  font-family: "MaisonNeue", "Courier", monospace !important;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+hr {
+  margin: 16px 0px 16px;
+  height: 1px;
+  background-color: black;
+}
+
+hr.thick {
+  height: 2px;
+}
+
+hr.extra-thick {
+  height: 4px;
+  margin: -24px 0px 24px;
+}
+
+hr.double {
+  background-color: transparent;
+  height: 9px;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 16px;
+}
+
+.section-heading h3 {
+  margin-left: 8px;
+  padding-top: 2px;
+  line-height: normal;
+}
+
+.title {
+  color: black;
+  margin: 16px 0px 16px !important;
+  font-weight: normal !important;
+}
+
+.columns {
+  margin: 0px 0px 24px !important;
+}
+
+.column {
+  padding: 0px 16px 0px;
+}
+
+.column:first-child {
+  padding: 0px 16px 0px 0px;
+}
+
+.column:last-child {
+  padding: 0px 0px 0px 16px;
+}
+
+article img {
+  filter: grayscale(100%);
+  transition: filter 0.33s ease;
+}
+
+article:hover img {
+  filter: grayscale(0%);
+  transition: filter 0.33s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .column:not(:last-child) {
+    border-right: 1px solid black;
+  }
+}
+
+.undivided {
+  border: none !important;
+}
+
+img {
+  filter: grayscale(100%);
+  transition: filter 0.33s ease;
+}
+
+img:hover {
+  filter: grayscale(0%);
+  transition: filter 0.33s ease;
+}
+
+.profile {
+  font-family: "CooperBTLight";
+  font-weight: normal !important;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.handle {
+  position: relative;
+  bottom: 11px;
+  padding: 8px 16px 8px;
+  letter-spacing: -0.2px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+a.highlight {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+  background: linear-gradient(to right, #FFEF8D 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition: background 0.25s ease;
+}
+
+a.highlight:hover {
+  /* background-color: #FAFE00; */
+  background-position:left bottom;
+  transition: background 0.25s ease;
+}
+
+.main-title {
+  font-family: "CooperBTLight";
+  font-size: 24px !important;
+  font-weight: normal !important;
+  line-height: 32px !important;
+  margin: 0px !important;
+}
+
+article {
+  position: relative;
+  display: flex;
+}
+
+.article-title {
+  font-family: "CooperBTLight";
+  font-size: 24px !important;
+  font-weight: normal !important;
+  line-height: 32px !important;
+  margin: 16px 0px 16px !important;
+}
+
+.external-link {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.external-link a {
+  padding-top: 1px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  padding: 0px;
+  margin-right: 8px;
+}
+
+.no-bullet ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#static {
+  height: 56px;
+  width: 100%;
+  background-color: black;
+}
