@@ -21,14 +21,8 @@ body {
   color: black;
 }
 
-header {
-  margin-bottom: 32px;
-  /* border:1px transparent solid; */
-}
-
 section {
   padding-bottom: 0px !important;
-  /* background-color: white; */
 }
 
 canvas {
@@ -37,6 +31,12 @@ canvas {
 
 footer {
   font-size: 11px;
+}
+
+.page {
+  padding-top: 32px;
+  max-width: 1280px;
+  margin: auto;
 }
 
 .is-display {
@@ -65,7 +65,7 @@ hr.thick {
 
 hr.extra-thick {
   height: 4px;
-  margin: -24px 0px 24px;
+  margin: -24px 0px 20px;
 }
 
 hr.double {
@@ -93,20 +93,45 @@ hr.double {
   font-weight: normal !important;
 }
 
-.columns {
-  margin: 0px 0px 24px !important;
+@media screen and (min-width: 849px) {
+  .columns {
+    margin: 0px 0px 24px !important;
+  }
+  .column {
+    padding: 0px 12px 0px;
+  }
+  .column:first-child {
+    padding: 0px 12px 0px 0px;
+  }
+  .column:last-child {
+    padding: 0px 0px 0px 12px;
+  }
+  .column:not(:last-child) {
+    border-right: 1px solid black;
+  }
 }
 
-.column {
-  padding: 0px 16px 0px;
+@media screen and (max-width: 848px) {
+  .columns {
+    margin: 0px 0px 24px !important;
+  }
+  .column {
+    padding: 0px 0px !important;
+    margin-bottom: 24px !important;
+  }
+  .left-border {
+    border-left: 1px solid black;
+    padding-left: 12px !important;
+    margin-left: 8px;
+  }
 }
 
-.column:first-child {
-  padding: 0px 16px 0px 0px;
+.undivided {
+  border: none !important;
 }
 
-.column:last-child {
-  padding: 0px 0px 0px 16px;
+article {
+  /* margin-bottom: 24px; */
 }
 
 article img {
@@ -119,16 +144,6 @@ article:hover img {
   transition: filter 0.33s ease;
 }
 
-@media screen and (min-width: 768px) {
-  .column:not(:last-child) {
-    border-right: 1px solid black;
-  }
-}
-
-.undivided {
-  border: none !important;
-}
-
 img {
   filter: grayscale(100%);
   transition: filter 0.33s ease;
@@ -139,11 +154,30 @@ img:hover {
   transition: filter 0.33s ease;
 }
 
+summary {
+  padding: 0px 8px;
+}
+
+.section {
+  padding: 0px 16px;
+}
+
 .profile {
   font-family: "CooperBTLight";
   font-weight: normal !important;
   font-size: 32px;
   line-height: 40px;
+}
+
+.profile-text {
+  padding: 0px 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.no-margin {
+  margin: 0px !important;
 }
 
 .handle {
@@ -193,13 +227,17 @@ article {
   font-size: 24px !important;
   font-weight: normal !important;
   line-height: 32px !important;
-  margin: 16px 0px 16px !important;
+  margin: 16px 0px 8px !important;
 }
 
 .external-link {
   display: flex;
   align-items: center;
   margin-top: 16px;
+}
+
+article > .external-link {
+  margin-top: 8px;
 }
 
 .external-link a {
@@ -223,8 +261,12 @@ article {
   height: 56px;
   width: 100%;
   background-color: black;
+  /* background-image: url("/images/footer@2x.png"); */
 }
 
 #quote {
-  max-width: 456px;
+  /* max-width: 456px; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
