@@ -134,24 +134,48 @@ article {
   /* margin-bottom: 24px; */
 }
 
+
+
+img.lazy-load {
+  opacity: 0;
+  transition-property: filter, opacity;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
+}
+
+img.loaded {
+  opacity: 1;
+  transition-property: filter, opacity;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
+}
+
 article img {
   filter: grayscale(100%);
-  transition: filter 0.33s ease;
+  transition-property: filter, opacity;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
 }
 
 article:hover img {
   filter: grayscale(0%);
-  transition: filter 0.33s ease;
+  transition-property: filter, opacity;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
 }
 
 img {
   filter: grayscale(100%);
-  transition: filter 0.33s ease;
+  transition-property: filter, opacity;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
 }
 
 img:hover {
   filter: grayscale(0%);
-  transition: filter 0.33s ease;
+  transition-property: filter, opacity;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
 }
 
 summary {
