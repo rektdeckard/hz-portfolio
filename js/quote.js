@@ -3,7 +3,7 @@
 const quotes = [
 // Ideal length ~= 30 characters OR 1 emoji + 28 characters
 //'‍😜<-------------------------->'
-  '👩🏻‍💻 Did somebody say icons??',
+  '👩🏻‍💻 Did somebody mention icons?',
   '🐈 Everything I do is for Bub',
   '💎 Sharp as all heck',
   '🥔 Look, I made potatoes!'
