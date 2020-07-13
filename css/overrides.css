@@ -14,7 +14,7 @@
 html {
   font-size: 13px;
   letter-spacing: -0.2px;
-  line-height: 18px;
+  line-height: 18px !important;
 }
 
 body {
@@ -23,10 +23,6 @@ body {
 
 section {
   padding-bottom: 0px !important;
-}
-
-canvas {
-  margin-top: -10px;
 }
 
 footer {
@@ -41,7 +37,7 @@ footer {
 
 .is-display {
   font-family: "CooperBTLight", "Cambria", serif !important;
-  line-height: 1.5;
+  line-height: 32px;
 }
 
 .is-mono {
@@ -50,7 +46,7 @@ footer {
 
 ::selection {
   color: white;
-  background: black;
+  background-color: black;
 }
 
 hr {
@@ -93,6 +89,17 @@ hr.double {
   font-weight: normal !important;
 }
 
+.profile {
+  font-family: "CooperBTLight";
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  padding: 0px 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 849px) {
   .columns {
     margin: 0px 0px 24px !important;
@@ -109,22 +116,51 @@ hr.double {
   .column:not(:last-child) {
     border-right: 1px solid black;
   }
+  .headline {
+    margin-bottom: 28px !important;
+  }
+  footer.columns {
+    margin-bottom: 0px !important;
+  }
 }
 
 @media screen and (max-width: 848px) {
+  .avatar {
+    padding: 24px;
+  }
   .columns {
     margin: 0px 0px 24px !important;
   }
   .column {
-    padding: 0px 0px !important;
+    padding: 0px 0px;
     margin-bottom: 24px !important;
+  }
+  hr.title-rule {
+    margin: 12px 0px 16px !important;
   }
   .left-border {
     border-left: 1px solid black;
     padding-left: 12px !important;
     margin-left: 8px;
   }
+  .headline {
+    margin-bottom: 34px !important;
+  }
+  .quote {
+    margin-bottom: 16px !important;
+  }
+  .profile {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  summary {
+    padding: 0px 8px;
+  }
+  footer {
+    margin-bottom: 16px !important;
+  }
 }
+
 
 .undivided {
   border: none !important;
@@ -133,8 +169,6 @@ hr.double {
 article {
   /* margin-bottom: 24px; */
 }
-
-
 
 img.lazy-load {
   opacity: 0;
@@ -178,26 +212,8 @@ img:hover {
   transition-timing-function: ease;
 }
 
-summary {
-  padding: 0px 8px;
-}
-
 .section {
   padding: 0px 16px;
-}
-
-.profile {
-  font-family: "CooperBTLight";
-  font-weight: normal !important;
-  font-size: 32px;
-  line-height: 40px;
-}
-
-.profile-text {
-  padding: 0px 8px;
-  height: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .no-margin {
@@ -218,7 +234,7 @@ a.highlight {
   cursor: pointer;
   text-decoration: underline;
   background: linear-gradient(to right, #FFEF8D 50%, transparent 50%);
-  background-size: 200% 100%;
+  background-size: 205% 100%;
   background-position:right bottom;
   transition: background 0.25s ease;
 }
@@ -237,10 +253,6 @@ a.highlight:hover {
   margin: 0px !important;
 }
 
-.is-nav {
-  margin-bottom: 32px !important;
-}
-
 .single-line {
   white-space: nowrap;
 }
@@ -256,6 +268,13 @@ article {
   font-weight: normal !important;
   line-height: 32px !important;
   margin: 16px 0px 8px !important;
+}
+
+.client-list-title {
+  font-size: 24px !important;
+  font-weight: normal !important;
+  line-height: 32px !important;
+  margin: 0px;
 }
 
 .external-link {
@@ -289,13 +308,8 @@ article > .external-link {
   height: 56px;
   width: 100%;
   background-color: black;
-  /* background-image: url("/images/footer@2x.png"); */
 }
 
 #quote {
-  /* min-width: 244px!important; */
-  max-width: 456px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+
 }
