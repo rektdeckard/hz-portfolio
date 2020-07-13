@@ -1,17 +1,12 @@
-// Add single-quoted phrases or quotations here to be randomly shown on page load
+// Add single-quoted phrases or quotations here, separated
+// by commas, to be randomly shown on page load
 const quotes = [
-  // '“When one teaches, two learn.” — Robert Heinlein',
-  // '“Design is thinking made visual.” — Saul Bass',
-  // '“Do not seek praise, seek criticism.” — Paul Arden',
-  // '“Design is a solution to a problem; art is a question to a problem.” — John Maeda',
-  // '“I think designers who aren’t selfish do really awful work.” — Paul Sahre',
-  // '“Good design is obvious. Great design is transparent.” — Joe Sparano',
-  // '“Have no fear of perfection — you’ll never reach it.” — Salvador Dali',
-  // '“The function of design is letting design function.” — Micha Commeren',
+// Ideal length ~= 30 characters OR 1 emoji + 28 characters
+//'‍😜<-------------------------->'
   '👩🏻‍💻 Did somebody say icons??',
   '🐈 Everything I do is for Bub',
   '💎 Sharp as all heck',
-  '🥔 Look, I made smashed potatoes!'
+  '🥔 Look, I made potatoes!'
 ];
 
 const quoteSpan = document.getElementById("quote");
