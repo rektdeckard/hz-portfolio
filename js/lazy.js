@@ -1,14 +1,15 @@
+// Lazy-load images and staggered fade-in
 document.addEventListener("DOMContentLoaded", () => {
   const images = Array.from(document.querySelectorAll("img.lazy-load"));
-  console.log(images);
+
   if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
           const img = entry.target;
 
-          setTimeout(() => img.classList.add("loaded"), 50 * i);
-
+          // Delay (in ms) between each image appearance
+          setTimeout(() => img.classList.add("loaded"), 75 * (i + 1));
           imageObserver.unobserve(img);
         }
       })
@@ -17,8 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     images.forEach((img) => imageObserver.observe(img));
   } else {
     images.forEach(img => {
-        img.src = img.dataset.src;
-        img.previousElementSibling.remove();
+      // img.src = img.dataset.src;
+      img.previousElementSibling?.remove();
+      img.classList.add("loaded");
     });
   }
 });
