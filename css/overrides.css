@@ -217,6 +217,10 @@ a.highlight:hover {
   margin-bottom: 32px !important;
 }
 
+.single-line {
+  white-space: nowrap;
+}
+
 article {
   position: relative;
   display: flex;
@@ -265,7 +269,8 @@ article > .external-link {
 }
 
 #quote {
-  /* max-width: 456px; */
+  /* min-width: 244px!important; */
+  max-width: 456px;
   /* display: flex;
   align-items: center;
   justify-content: center; */

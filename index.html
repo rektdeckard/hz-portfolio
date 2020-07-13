@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/bulma.css">
     <link rel="stylesheet" href="/css/overrides.css">
+    <script src="/js/lazy.js"></script>
   </head>
   <body>
     <div class="page is-mono">
       <section id="header" class="section">
         <header class="has-text-centered">
           <div class="columns is-centered is-vcentered is-nav">
-            <div id="quote" class="column undivided"></div>
+            <div class="column undivided has-text-left single-line">
+              <div id="quote">Something will go here</div>
+            </div>
             <!-- <span id="date" class="column undivided is-narrow"></span> -->
             <hr class="column undivided"/>
             <div class="column undivided is-narrow"><h1 class="is-display main-title">Helena Zhang</h1></div>
             <hr class="column undivided"/>
-            <div class="column undivided">
+            <div class="column undivided single-line">
               <!-- <span> -->
-                <a href="#" class="highlight">Medium</a> —
-                <a href="#" class="highlight">Dribbble</a> —
-                <a href="#" class="highlight">LinkedIn</a>
+                <a href="https://medium.com/@minoraxis" class="highlight">Medium</a> —
+                <a href="https://dribbble.com/minoraxis" class="highlight">Dribbble</a> —
+                <a href="https://www.linkedin.com/in/zhanghelena/" class="highlight">LinkedIn</a>
               <!-- </span> -->
             </div>
           </div>
@@ -32,15 +35,14 @@
           <div class="columns is-multiline no-margin">
             <div class="column undivided is-one-quarter">
               <!-- <div style="margin: 24px 12px 96px 12px;"> -->
-                <figure class="image is-square">
-                  <!-- <img src="/images/profile@2x.png"> -->
-                  <img src="/images/helena-groening-style-c@2x.png">
+                <figure class="image">
+                  <img class="lazy-load" src="/images/helena-groening-style-c@2x.png">
                 </figure>
               <!-- </div> -->
             </div>
             <div class="column">
               <div class="profile-text">
-                <p>Hello, world! I'm a designer/writer based in Brooklyn, New York. I shape and ship digital products, create tools for creators, and write about design on <a href="#" class="highlight">Medium</a>. Recent obsessions: <a href="#" class="highlight">Khruangbin</a>, <a href="#" class="highlight">Overcooked</a>, and <a href="#" class="highlight">Atomic Habits</a>.</p>
+                <p>Hello, world! I'm a designer/writer based in Brooklyn, New York. I shape and ship digital products, create tools for creators, and write about design on <a href="https://medium.com/@minoraxis" class="highlight">Medium</a>. Recent obsessions: <a href="https://www.khruangbin.com/" class="highlight">Khruangbin</a>, <a href="http://www.ghosttowngames.com/overcooked-2/" class="highlight">Overcooked</a>, and <a href="https://jamesclear.com/atomic-habits" class="highlight">Atomic Habits</a>.</p>
               </div>
             </div>
           </div>
@@ -50,56 +52,56 @@
         <hr class="double"/>
         <div class="section-heading">
           <figure class="image is-24x24">
-            <img height="24px" src="/icons/icon-pencil-line.svg">
+            <img class="lazy-load" height="24px" src="/icons/icon-pencil-line.svg">
           </figure>
           <h3>Articles</h3>
         </div>
         <div class="columns">
           <article class="column is-3">
-            <figure class="image is-16by9">
-              <img style="width: 100%; height: auto;" src="/images/article-pixel-snapping@2x.png">
+            <figure class="image">
+              <img class="lazy-load" style="width: 100%; height: auto;" src="/images/article-pixel-snapping@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">Pixel-Snapping in Icon Design</h3>
               <p>We all want our designs to display sharp on all platforms, for all our users. To achieve this goal for digital icons, a best practice has held the standard: it is recommended to pixel-fit or pixel-snap icons...</p>
               <div class="external-link">
-                <img src="/icons/icon-external-24.svg" class="icon"/>
-                <a href="#" class="highlight">Read on Medium</a>
+                <img class="lazy-load icon" src="/icons/icon-external-24.svg"/>
+                <a href="https://uxdesign.cc/pixel-snapping-in-icon-design-a-rendering-test-6ecd5b516522" class="highlight">Read on Medium</a>
               </div>
             </summary>
           </article>
           <hr class="is-mobile"/>
           <article class="column is-3">
             <figure class="image is-16by9">
-              <img src="/images/article-3-classic@2x.png">
+              <img class="lazy-load" src="/images/article-3-classic@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">3 Classic Icon Families</h3>
               <p>Icons communicate so much with so little. When they're successful we hardly notice them — a pedestrian sign, a back button, a notification bell. I'd like to examine a few enduring examples that have not only solved the design problem at hand but further left and imprint on the...</p>
               <div class="external-link">
-                <img src="/icons/icon-external-24.svg" class="icon"/>
-                <a href="#" class="highlight">Read on Medium</a>
+                <img class="lazy-load" src="/icons/icon-external-24.svg" class="icon"/>
+                <a href="https://medium.com/swlh/3-classic-icon-families-f5026ed923dd" class="highlight">Read on Medium</a>
               </div>
           </summary>
           </article>
           <hr class="is-mobile"/>
           <article class="column is-3">
             <figure class="image is-16by9">
-              <img src="/images/article-icon-grids@2x.png">
+              <img class="lazy-load" src="/images/article-icon-grids@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">Icon Grids & Keylines Demystified</h3>
               <p>If you're a digital designer, you've probably encountered an icon grid before. Perhaps you were tasked to create an app icon for iOS & Android, or you contributed to a set of UI icons. Perhaps — like me — you...</p>
               <div class="external-link">
-                <img src="/icons/icon-external-24.svg" class="icon"/>
-                <a href="#" class="highlight">Read on Medium</a>
+                <img class="lazy-load icon" src="/icons/icon-external-24.svg"/>
+                <a href="https://medium.com/@minoraxis/icon-grids-keylines-demystified-5a228fe08cfd" class="highlight">Read on Medium</a>
               </div>
           </summary>
           </article>
           <hr class="is-mobile"/>
           <article class="column is-3">
             <figure class="image is-16by9">
-              <img src="/images/article-foundations@2x.png">
+              <img class="lazy-load" src="/images/article-foundations@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">Foundations of Iconography</h3>
@@ -107,8 +109,8 @@
               <br/>
               <p>Icons employ visual metaphors to speed comprehension, by...</p>
               <div class="external-link">
-                <img src="/icons/icon-external-24.svg" class="icon"/>
-                <a href="#" class="highlight">Read on Medium</a>
+                <img class="lazy-load icon" src="/icons/icon-external-24.svg"/>
+                <a href="https://uxdesign.cc/foundations-of-iconography-f95d7233a3e6" class="highlight">Read on Medium</a>
               </div>
             </summary>
           </article>
@@ -118,14 +120,14 @@
         <hr class="double"/>
         <div class="section-heading">
           <figure class="image is-24x24">
-            <img height="24px" src="/icons/icon-briefcase-24.svg">
+            <img class="lazy-load" height="24px" src="/icons/icon-briefcase-24.svg">
           </figure>
           <h3>Design</h3>
         </div>
         <div class="columns">
           <article class="column is-half">
             <figure class="image is-3by1">
-              <img src="/images/design-tri@2x.png">
+              <img class="lazy-load" src="/images/design-tri@2x.png">
             </figure>
             <summary class="content">
               <h3 class="article-title is-display">Toyota Research Institute</h3>
@@ -144,7 +146,7 @@
           <hr class="is-mobile"/>
           <article class="column is-3">
             <figure class="image is-16by9">
-              <img src="/images/design-waze@2x.png">
+              <img class="lazy-load" src="/images/design-waze@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">Waze</h3>
@@ -156,7 +158,7 @@
           <hr class="is-mobile"/>
           <article class="column is-3">
             <figure class="image is-16by9">
-              <img src="/images/design-paypal@2x.png">
+              <img class="lazy-load" src="/images/design-paypal@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">PayPal</h3>
@@ -170,7 +172,7 @@
         <div class="columns">
           <article class="column is-3">
             <figure class="image is-16by9">
-              <img src="/images/design-soulcycle@2x.png">
+              <img class="lazy-load" src="/images/design-soulcycle@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">SoulCycle</h3>
@@ -182,7 +184,7 @@
           <hr class="is-mobile"/>
           <article class="column is-half">
             <figure class="image is-2by1">
-              <img src="/images/design-phosphor-android@2x.png">
+              <img class="lazy-load" src="/images/design-phosphor-android@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">Phosphor for Android</h3>
@@ -190,15 +192,15 @@
               <br/>
               <p>Phosphor for Android includes 870 icons, available in 4 colors. Each icon is crafted with minimal lines and geometric shapes to be clear, reductive, and quirky.</p>
               <div class="external-link">
-                <img src="/icons/icon-external-24.svg" class="icon"/>
-                <a href="#" class="highlight">Download on the Play Store</a>
+                <img class="lazy-load icon" src="/icons/icon-external-24.svg"/>
+                <a href="https://play.google.com/store/apps/details?id=com.tobiasfried.phosphor" class="highlight">Download on the Play Store</a>
               </div>
             </summary>
           </article>
           <hr class="is-mobile"/>
           <article class="column is-3">
             <figure class="image is-fullwidth">
-              <img src="/images/design-prolific@2x.png">
+              <img class="lazy-load" src="/images/design-prolific@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">Prolific Interactive</h3>
@@ -210,8 +212,8 @@
         </div>
         <hr/>
         <figure class="image">
-          <a href="#">
-            <img src="/images/phosphor-for-android@2x.png">
+          <a href="https://play.google.com/store/apps/details?id=com.tobiasfried.phosphor">
+            <img class="lazy-load" src="/images/phosphor-for-android@2x.png">
           </a>
         </figure>
       </section>
@@ -219,7 +221,7 @@
         <hr class="double"/>
         <div class="section-heading">
           <figure class="image is-24x24">
-            <img height="24px" src="/icons/icon-dribbble-24.svg">
+            <img class="lazy-load" height="24px" src="/icons/icon-dribbble-24.svg">
           </figure>
           <h3>Snapshots from Dribbble</h3>
         </div>
@@ -227,39 +229,39 @@
         <div class="columns">
           <article class="column is-4">
             <figure class="image is-16by9">
-              <img src="/images/dribbble-numbers@2x.png">
+              <img class="lazy-load" src="/images/dribbble-numbers@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">Numbers</h3>
               <div class="external-link">
-              <img src="/icons/icon-external-24.svg" class="icon"/>
-                <a href="#" class="highlight">View on Dribbble</a>
+              <img class="lazy-load icon" src="/icons/icon-external-24.svg"/>
+                <a href="https://dribbble.com/shots/10869796-Numbers" class="highlight">View on Dribbble</a>
               </div>
             </summary>
           </article>
           <hr class="is-mobile"/>
           <article class="column is-4">
             <figure class="image is-16by9">
-              <img src="/images/dribbble-wednesday@2x.png">
+              <img class="lazy-load" src="/images/dribbble-wednesday@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">Wednesday Night Sketch</h3>
               <div class="external-link">
-              <img src="/icons/icon-external-24.svg" class="icon"/>
-                <a href="#" class="highlight">View on Dribbble</a>
+              <img class="lazy-load icon" src="/icons/icon-external-24.svg"/>
+                <a href="https://dribbble.com/shots/4115239-Wednesday-Night-Sketch" class="highlight">View on Dribbble</a>
               </div>
             </summary>
           </article>
           <hr class="is-mobile"/>
           <article class="column is-4">
             <figure class="image is-16by9">
-              <img src="/images/dribbble-bunnimoji@2x.png">
+              <img class="lazy-load" src="/images/dribbble-bunnimoji@2x.png">
             </figure>
             <summary>
               <h3 class="article-title is-display">Bunnimoji</h3>
               <div class="external-link">
-              <img src="/icons/icon-external-24.svg" class="icon"/>
-                <a href="#" class="highlight">View on Dribbble</a>
+              <img class="lazy-load icon" src="/icons/icon-external-24.svg"/>
+                <a href="https://dribbble.com/shots/3651481-Bunnimoji" class="highlight">View on Dribbble</a>
               </div>
             </summary>
           </article>
@@ -278,7 +280,7 @@
               <li>Waze</li>
               <li>BTS</li>
               <li>PayPal</li>
-              <li>Totota Research Institute</li>
+              <li>Toyota Research Institute</li>
               <li>Babies 'R'Us</li>
               <li>American Express</li>
               <li>SoulCycle</li>
