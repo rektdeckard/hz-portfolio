@@ -3,12 +3,14 @@
   font-family: 'CooperBTLight';
   src:  url('/fonts/CooperBTLight.woff2') format('woff2'),
         url('/fonts/CooperBTLight.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'MaisonNeue';
   src:  url('/fonts/MaisonNeueWEB-Mono.woff2') format('woff2'),
         url('/fonts/MaisonNeueWEB-Mono.woff') format('woff');
+  font-display: swap;
 }
 
 html {
