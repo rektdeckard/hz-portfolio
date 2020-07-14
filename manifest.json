@@ -1,6 +1,6 @@
 {
   "short_name": "Helena Zhang",
-  "name": "Protfolio for Helena Zhang",
+  "name": "Hello, world! I'm a designer/writer based in Brooklyn, New York. I shape and ship digital products, create tools for creators, and write about design on Medium.",
   "author": "Helena Zhang",
   "icons": [
     {
@@ -19,6 +19,7 @@
       "sizes": "512x512"
     }
   ],
-  "display": "standalone",
-  "background_color": "#ffffff"
+  "theme_color":"#ffffff",
+  "background_color":"#ffffff",
+  "display":"standalone"
 }
