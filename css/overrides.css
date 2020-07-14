@@ -245,6 +245,11 @@ a.highlight:hover {
   transition: background 0.25s ease;
 }
 
+a::selection {
+  color: black;
+  background: rgba(125, 125, 125, 0.18);
+}
+
 .main-title {
   font-family: "CooperBTLight";
   font-size: 24px !important;

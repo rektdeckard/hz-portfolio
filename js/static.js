@@ -19,11 +19,11 @@ if (canvas) {
   };
 
   // This method will generate static at the fastest possible render speed
-  // (function loop() {
-  //     noise(context);
-  //     requestAnimationFrame(loop);
-  // })();
+  (function loop() {
+      noise(context);
+      requestAnimationFrame(loop);
+  })();
 
   // This method will generate static at a fixed interval
-  setInterval(() => noise(context), 24); // in milliseconds
+  // setInterval(() => noise(context), 24); // in milliseconds
 };
