@@ -1,12 +1,15 @@
 // Add single-quoted phrases or quotations here, separated
 // by commas, to be randomly shown on page load
 const quotes = [
-// Ideal length ~= 30 characters OR 1 emoji + 28 characters
-//'‍😜<-------------------------->'
-  '👩🏻‍💻 Did somebody say icons??',
-  '🐈 Everything I do is for Bub',
-  '💎 Sharp as all heck',
-  '🥔 Look, I made potatoes!'
+// Ideal length ~= 30 characters OR 1 emoji + 27 characters
+  '👩🏻‍💻 Beep boop boop',
+  '📖 Reading: Atomic Habits',
+  '🎶 Listening: Khruangbin',
+  '🎵 Listening: 90s grunge',
+  '📺 Watching: Succession',
+  '📺 Watching: Schitt\'s Creek',
+  '🎮 Playing: Age of Empires II',
+  '🎮 Playing: Overcooked',
 ];
 
 const quoteSpan = document.getElementById("quote");
