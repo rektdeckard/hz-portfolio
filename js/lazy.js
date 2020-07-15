@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
           const img = entry.target;
+          img.src = img.dataset.src;
 
           // Delay (in ms) between each image appearance
           setTimeout(() => img.classList.add("loaded"), 75 * (i + 1));
@@ -17,9 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     images.forEach((img) => imageObserver.observe(img));
   } else {
-    images.forEach(img => {
-      // img.src = img.dataset.src;
-      img.previousElementSibling?.remove();
+    images.forEach((img) => {
+      img.src = img.dataset.src;
       img.classList.add("loaded");
     });
   }
