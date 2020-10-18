@@ -4,7 +4,8 @@ const quotes = [
 // Ideal length ~= 30 characters OR 1 emoji + 27 characters
   '👩🏻‍💻 Beep boop boop',
   '📖 Reading: Atomic Habits',
-  '🎶 Listening: Khruangbin',
+  '📖 Reading: Good Strategy/Bad Strategy',
+  '🎶 Listening: Blood Orange',
   '🎵 Listening: 90s grunge',
   '📺 Watching: Succession',
   '📺 Watching: Schitt\'s Creek',
