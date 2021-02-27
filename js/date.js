@@ -1,2 +1,2 @@
-const dateSpan = document.getElementById("date");
-dateSpan.innerHTML = new Date().toDateString();
+const dateSpan = document.getElementById("copyright");
+dateSpan.innerHTML = `${new Date().getFullYear()}`;
