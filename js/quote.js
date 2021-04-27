@@ -5,10 +5,12 @@ const quotes = [
   "👩🏻‍💻 Beep boop boop",
   "🎶 Listening: Summer Walker",
   "🎵 Listening: SZA",
-  "🎶 Listening: Lúnasa",
+  "🎶 Listening: Early aughts alt metal",
+  "📖 Reading: What Technology Wants",
+  "📚 Reading: WOLFPACK",
   "📺 Watching: Halt and Catch Fire",
-  "📺 Watching: Disenchantment",
   "🎮 Playing: Hades",
+  "🎮 Playing: Stardew Valley",
 ];
 
 function randomQuote() {
