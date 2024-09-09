@@ -187,20 +187,6 @@ img.loaded {
   transition-timing-function: ease;
 }
 
-article img {
-  filter: grayscale(100%);
-  transition-property: filter, opacity;
-  transition-duration: 0.33s;
-  transition-timing-function: ease;
-}
-
-article:hover img {
-  filter: grayscale(0%);
-  transition-property: filter, opacity;
-  transition-duration: 0.33s;
-  transition-timing-function: ease;
-}
-
 img {
   filter: grayscale(100%);
   transition-property: filter, opacity;
@@ -209,6 +195,20 @@ img {
 }
 
 img:hover {
+  filter: grayscale(0%);
+  transition-property: filter, opacity;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
+}
+
+article img {
+  filter: grayscale(100%);
+  transition-property: filter, opacity;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
+}
+
+article:hover img {
   filter: grayscale(0%);
   transition-property: filter, opacity;
   transition-duration: 0.33s;
