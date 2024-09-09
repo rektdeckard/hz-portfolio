@@ -10,7 +10,7 @@ const quotes = [
   "📖 Reading: Shift Happens",
   "📺 Watching: The Bear",
   "📺 Watching: X-Files",
-  "📺 Watching: Killing Eye",
+  "📺 Watching: Killing Eve",
   "🎮 Playing: AoE II",
 ];
 
