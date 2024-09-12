@@ -138,6 +138,10 @@ hr.double {
     padding: 0px 0px;
     margin-bottom: 24px !important;
   }
+  .columns.reverse-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   hr.title-rule {
     margin: 12px 0px 16px !important;
   }
@@ -164,13 +168,8 @@ hr.double {
   }
 }
 
-
 .undivided {
   border: none !important;
-}
-
-article {
-  /* margin-bottom: 24px; */
 }
 
 img.lazy-load {
@@ -263,11 +262,6 @@ a::selection {
 
 .single-line {
   white-space: nowrap;
-}
-
-article {
-  position: relative;
-  display: flex;
 }
 
 .article-title {
